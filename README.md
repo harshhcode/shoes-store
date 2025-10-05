@@ -72,7 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Online Shoes Store - React App
 
 ## Deployment Links
-- **Netlify:** [https://shoeostore.netlify.app/]
+- **Netlify:** [Click for Live Demo] (https://shoeostore.netlify.app/)
 
 
 ## Description
