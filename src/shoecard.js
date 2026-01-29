@@ -1,15 +1,14 @@
 import React from "react";
 
-const Card = ({ product, onAddToCart }) => {
+const ShoeCard = ({ product, onAddToCart }) => {
   return (
     <div
       style={{
         border: "1px solid #ddd",
-        borderRadius: "12px",
+        borderRadius: "10px",
         padding: "15px",
-        width: "200px",
-        boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
         textAlign: "center",
+        boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
         backgroundColor: "#fff",
       }}
     >
@@ -19,25 +18,24 @@ const Card = ({ product, onAddToCart }) => {
         style={{
           width: "100%",
           height: "150px",
-          borderRadius: "8px",
           objectFit: "cover",
-          marginBottom: "10px",
+          borderRadius: "8px",
         }}
       />
+
       <h3>{product.name}</h3>
       <p>₹{product.price}</p>
+
       <button
         onClick={() => onAddToCart(product)}
         style={{
-          backgroundColor: "#007bff",
-          color: "#fff",
-          border: "none",
           padding: "8px 12px",
-          borderRadius: "5px",
+          border: "none",
+          backgroundColor: "#222",
+          color: "#fff",
+          borderRadius: "6px",
           cursor: "pointer",
-          
         }}
-
       >
         Add to Cart
       </button>
@@ -45,4 +43,4 @@ const Card = ({ product, onAddToCart }) => {
   );
 };
 
-export default Card;
+export default ShoeCard;
